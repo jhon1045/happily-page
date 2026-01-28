@@ -5,7 +5,7 @@ const services = [
     id: 1,
     title: 'Psicología Infantil',
     description: 'Atención especializada para niños, adolescentes y adultos mayores.',
-    image: 'https://images.unsplash.com/photo-1695381834704-6bd3bb87644c?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85',
+    image: 'https://images.unsplash.com/photo-1695381834704-6bd3bb87644c?crop=entropy&cs=srgb&fm=webp&ixlib=rb-4.1.0&q=60&w=500',
     icon: Brain,
     colSpan: 'md:col-span-2',
   },
@@ -13,7 +13,7 @@ const services = [
     id: 2,
     title: 'Pedagogía',
     description: 'Evaluación y tratamiento para niños y adolescentes en edad escolar.',
-    image: 'https://images.unsplash.com/photo-1758612898701-e2f2958f219d?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85',
+    image: 'https://images.unsplash.com/photo-1758612898701-e2f2958f219d?crop=entropy&cs=srgb&fm=webp&ixlib=rb-4.1.0&q=60&w=500',
     icon: BookOpen,
     colSpan: 'md:col-span-1',
   },
@@ -34,7 +34,7 @@ export default function Services() {
       className="py-24 md:py-32 px-6 md:px-12 bg-orange-50"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-dark mb-4">
             Nuestros Servicios
           </h2>
@@ -47,7 +47,8 @@ export default function Services() {
           {services.map((service) => (
             <div
               key={service.id}
-              className={`${service.colSpan} bg-white/80 backdrop-blur-md border border-white/50 shadow-md rounded-3xl overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group`}
+              className={`${service.colSpan} bg-white/80 backdrop-blur-md border border-white/50 shadow-md rounded-3xl overflow-hidden hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group animate-on-scroll`}
+              style={{ animationDelay: `${service.id * 0.15}s` }}
             >
               {service.isHorizontal ? (
                 <div className="p-8 md:p-12 flex items-center gap-8">
@@ -73,6 +74,7 @@ export default function Services() {
                       <img
                         src={service.image}
                         alt={service.title}
+                        loading="lazy"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>

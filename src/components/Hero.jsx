@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Text */}
-          <div className="lg:col-span-7 space-y-8 animate-fadeIn">
+          <div className="lg:col-span-7 space-y-8 animate-fade-left">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight text-dark">
               Asesoría Pedagógica y Psicológica.
             </h1>
@@ -31,13 +31,14 @@ export default function Hero() {
           </div>
 
           {/* Image */}
-          <div className="lg:col-span-5 animate-fadeInScale">
+          <div className="lg:col-span-5 animate-fade-right delay-200">
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl blur-3xl"></div>
               <img
-                src="https://images.unsplash.com/photo-1696669706026-dcf8c37308aa?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85"
+                src="https://images.unsplash.com/photo-1696669706026-dcf8c37308aa?crop=entropy&cs=srgb&fm=webp&ixlib=rb-4.1.0&q=60&w=600"
                 alt="Psicología infantil"
-                className="relative rounded-3xl shadow-2xl w-full h-auto object-cover"
+                loading="lazy"
+                className="relative rounded-3xl shadow-2xl w-full h-auto object-cover animate-float"
               />
             </div>
           </div>

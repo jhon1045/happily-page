@@ -31,7 +31,7 @@ export default function Psychology() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
-          <div>
+          <div className="animate-fade-left">
             <div className="inline-block px-4 py-2 bg-secondary/20 rounded-full mb-6">
               <p className="text-primary font-semibold">Salud Mental</p>
             </div>
@@ -71,12 +71,13 @@ export default function Psychology() {
           </div>
 
           {/* Image Grid */}
-          <div className="relative">
+          <div className="relative animate-fade-right delay-200">
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <img
-                  src="https://images.unsplash.com/photo-1588979355313-6711a095465f?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85"
+                  src="https://images.unsplash.com/photo-1588979355313-6711a095465f?crop=entropy&cs=srgb&fm=webp&ixlib=rb-4.1.0&q=60&w=400"
                   alt="Familia feliz"
+                  loading="lazy"
                   className="rounded-3xl shadow-xl w-full h-64 object-cover"
                 />
                 <div className="bg-white/80 backdrop-blur-md rounded-3xl p-6 shadow-xl">
@@ -98,8 +99,9 @@ export default function Psychology() {
                   </p>
                 </div>
                 <img
-                  src="https://images.unsplash.com/photo-1696669706026-dcf8c37308aa?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85"
+                  src="https://images.unsplash.com/photo-1696669706026-dcf8c37308aa?crop=entropy&cs=srgb&fm=webp&ixlib=rb-4.1.0&q=60&w=400"
                   alt="Psicología infantil"
+                  loading="lazy"
                   className="rounded-3xl shadow-xl w-full h-64 object-cover"
                 />
               </div>

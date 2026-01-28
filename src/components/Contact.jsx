@@ -41,7 +41,7 @@ export default function Contact() {
       className="py-24 md:py-32 px-6 md:px-12 bg-slate-400"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-on-scroll">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
             ¡Comunícate con nosotros!
           </h2>
@@ -51,7 +51,7 @@ export default function Contact() {
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl">
+          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl animate-scale delay-200">
             <div className="mb-8 text-center">
               <div className="inline-flex items-center justify-center w-20 h-20 bg-primary/10 rounded-2xl mb-4">
                 <Mail className="text-primary" size={40} />
