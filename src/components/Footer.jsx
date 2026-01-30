@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Twitter } from 'lucide-react'
+import logo from '../logo/WhatsApp Image 2026-01-29 at 17.21.54 (1).jpeg'
 
 export default function Footer() {
   const scrollToSection = (sectionId) => {
@@ -12,9 +13,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Happily
-            </h3>
+            <img src={logo} alt="Happily Fundación" className="h-20 w-auto mb-4 rounded-xl" />
             <p className="text-white/70 leading-relaxed">
               Apoyo profesional para el desarrollo integral de tus hijos.
             </p>

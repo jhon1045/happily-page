@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
+import logo from '../logo/WhatsApp Image 2026-01-29 at 17.21.54 (1).jpeg'
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -36,9 +37,9 @@ export default function Navbar() {
           {/* Logo */}
           <button
             onClick={() => scrollToSection('inicio')}
-            className="text-2xl md:text-3xl font-bold text-dark hover:text-primary transition-colors"
+            className="hover:opacity-80 transition-opacity"
           >
-            Happily
+            <img src={logo} alt="Happily Fundación" className="h-16 md:h-15 w-auto  rounded-xl" />
           </button>
 
           {/* Desktop Menu */}
